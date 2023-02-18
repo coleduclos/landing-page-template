@@ -3,8 +3,7 @@ terraform {
 }
 
 module "website" {
-    source = "github.com/coleduclos/tf-modules-s3-static-website"
-    certificate_arn = var.certificate_arn
+    source = "github.com/coleduclos/tf-modules-s3-static-website?ref=v0.1"
     error_document_key = "index.html"
     public_hosted_zone_name = var.public_hosted_zone_name
     tags = local.tags

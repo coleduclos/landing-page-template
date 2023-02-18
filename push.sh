@@ -2,6 +2,11 @@
 
 # Pushes zipped artifact to S3
 
+if [ -z "$APPLICATION_ID" ]; then
+    echo "Please set the APPLICATION_ID environment variable."
+    exit 1
+fi
+
 if [ -z "$ARTIFACT_S3_BUCKET" ]; then
     echo "Please set the ARTIFACT_S3_BUCKET environment variable."
     exit 1
@@ -14,7 +19,7 @@ fi
 
 SERVICE_NAME=$(basename $(pwd))
 ARTIFACT_FILE_NAME="${SERVICE_NAME}.zip"
-ARTIFACT_S3_KEY=artifacts/${ARTIFACT_S3_VERSION}/${ARTIFACT_FILE_NAME}
+ARTIFACT_S3_KEY="${APPLICATION_ID}/${SERVICE_NAME}/artifacts/${ARTIFACT_S3_VERSION}/${ARTIFACT_FILE_NAME}"
 
 if [ ! -f $ARTIFACT_FILE_NAME ]; then
     echo "ERROR: Could not find ${ARTIFACT_FILE_NAME}. Exiting..."

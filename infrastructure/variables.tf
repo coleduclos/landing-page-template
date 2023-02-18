@@ -1,7 +1,3 @@
-variable "certificate_arn" {
-    type = string
-}
-
 variable "environment" {
     description = "The environment of the application."
 }
