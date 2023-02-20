@@ -1,10 +1,10 @@
 # Infrastructure
 ## Build
 ```
-./build.sh
+make build
 ```
 ## Run
-Before running any Terraform commands, please set the credentials appropriately:
+Before running any Terraform commands, please set the AWS credentials appropriately:
 ```
 export AWS_ACCESS_KEY_ID=<INSERT ACCESS KEY ID>
 export AWS_SECRET_ACCESS_KEY=<INSERT SECRET ACCESS KEY>
@@ -17,14 +17,14 @@ export ENVIRONMENT=<INSERT ENVIRONMENT NAME: dev | prd>
 
 ### Plan
 ```
-./run.sh plan
+make plan
 ```
-### Apply
+### Deploy
 ```
-./run.sh apply -auto-approve
+make deploy
 ```
 ### Destroy
-:warning:CAUTION:warning:
+:warning: CAUTION :warning:
 ```
-./run.sh destroy
+make destroy
 ```
