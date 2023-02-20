@@ -1,0 +1,11 @@
+
+.img-max {
+  max-width: 500px;
+  width:100%;
+}
+
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}

@@ -1,8 +1,8 @@
 build:
 	./build.sh
-push:
-	./push.sh
+plan:
+	./run.sh plan
 deploy:
-    ./deploy.sh
+	./run.sh apply -auto-approve
 test:
 	echo "WARNING: test not implemented yet!"

@@ -1,20 +1,39 @@
-# landing-page-template
-GitHub template for creating a landing page
+# mobile-app-landing-page-template
+GitHub template for creating a mobile app landing page
 
-## Build
+## AWS Infrastructure
+### Build
 
 ```
 make build
 ```
 
-## Test
+### Plan
 
 ```
-make test
+make plan
 ```
 
-## Deploy
-
+### Deploy
 ```
 make deploy
+```
+
+## HTML Code
+### Build
+
+```
+make build
+```
+
+### Push
+
+```
+make push
+```
+
+### Deploy
+
+```
+make push
 ```
