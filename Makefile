@@ -3,6 +3,6 @@ build:
 push:
 	./push.sh
 deploy:
-    ./deploy.sh
+	./deploy.sh
 test:
 	echo "WARNING: test not implemented yet!"
