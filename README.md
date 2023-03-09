@@ -1,6 +1,9 @@
 # mobile-app-landing-page-template
 GitHub template for creating a mobile app landing page
 
+Real Examples:
+* [https://magnifyinglight.co](https://magnifyinglight.co)
+
 ## Usage
 
 ### Create git repo
